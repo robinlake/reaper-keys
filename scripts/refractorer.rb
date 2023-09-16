@@ -8,6 +8,7 @@ class Refractorer
       'global' => @definitions_dir + 'global.lua',
       'midi' => @definitions_dir + 'midi.lua',
       'main' => @definitions_dir + 'main.lua',
+      'user'=> @definitions_dir + 'user.lua',
     ]
   end
 
@@ -51,7 +52,7 @@ class Refractorer
   end
 
   def get_all_bound_actions
-    all_bindings = `cat #{@bindings['midi']} #{@bindings['main']} #{@bindings['global']}`
+    all_bindings = `cat #{@bindings['midi']} #{@bindings['main']} #{@bindings['global']} #{@bindings['user']}`
 
     bound_actions = ''
     all_bindings.each_line do |line|

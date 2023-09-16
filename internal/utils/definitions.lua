@@ -60,6 +60,7 @@ local definition_tables = {
   global = concatEntryTables(require(default_tables_dir .. 'global'), user_definitions.global ),
   main = concatEntryTables(require(default_tables_dir .. 'main'), user_definitions.main ),
   midi = concatEntryTables(require(default_tables_dir .. 'midi'), user_definitions.midi ),
+  user = concatEntryTables(require(default_tables_dir .. 'user'), user_definitions.user ),
 }
 
 function definitions.getPossibleEntries(context)

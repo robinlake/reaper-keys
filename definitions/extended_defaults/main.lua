@@ -1,7 +1,9 @@
+-- local user = require("user")
 return {
   track_motion = {
     ["G"] = "LastTrack",
     ["gg"] = "FirstTrack",
+    ["gb"] = "NextFolderNear",
     ["J"] = "NextFolderNear",
     ["K"] = "PrevFolderNear",
     ["/"] = "MatchedTrackForward",
@@ -129,4 +131,5 @@ return {
     ["<M-S>"] = "SelectItemsUnderEditCursor",
     ["'"] = "MarkedTracks",
   },
+  -- user_settings = user.bindings(),
 }

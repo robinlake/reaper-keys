@@ -2,7 +2,6 @@ return {
   track_motion = {
     ["G"] = "LastTrack",
     ["gg"] = "FirstTrack",
-    ["gk"] = "FirstTrack",
     ["J"] = "NextFolderNear",
     ["K"] = "PrevFolderNear",
     ["/"] = "MatchedTrackForward",
